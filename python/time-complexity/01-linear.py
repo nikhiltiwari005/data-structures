@@ -1,14 +1,54 @@
-from memory_profiler import profile
+import os
 
-print("Linear TX \n")
+print("Linear Timecomplexity \n")
 
 names = ["john", "sam", "raj"]
 
-@profile
-def printNames(list):
+print("Linear Timecomplexity Example 1")
+
+def linearEx1(list):
+    x = newArr()
+    print(x)
     print("No of persons", len(list))
     for index, name in enumerate(names):
         print(index + 1, str.capitalize(name))
 
+def newArr():
+    return [1, "r"]
 
-printNames(names)
+linearEx1(names)
+
+
+print("\n\nLinear Timecomplexity Example 2")
+
+def linearEx2(userList: list):
+    i = 0
+    userLen = len(userList)
+    while userLen > i:
+        print(i + 1, userList[i])
+        i += 1
+        
+linearEx2(names)
+
+print(os.linesep, "\nLinear Timecomplexity Example 3")
+
+def linearEx3(users: list):
+    i = 1
+    for name in users:
+        print(i, name)
+        i += 1
+
+    print("-----------")
+    i = 1
+    for name in enumerate(users):
+        print(i, name)
+        i += 1
+    
+    print("-----------")
+    for name in enumerate(users):
+        print(name[0] + 1, name[1])
+        
+linearEx3(names)
+
+
+print("Time Complexity of all 3 programs are O(n), Space Complexity is O(1)")
