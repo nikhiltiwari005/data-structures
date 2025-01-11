@@ -1,10 +1,10 @@
 import os
 
-print("Linear Timecomplexity \n")
+print("Linear Time complexity \n")
 
 names = ["john", "sam", "raj"]
 
-print("Linear Timecomplexity Example 1")
+print("Linear Time complexity Example 1")
 
 def linearEx1(list):
     x = newArr()
@@ -19,7 +19,7 @@ def newArr():
 linearEx1(names)
 
 
-print("\n\nLinear Timecomplexity Example 2")
+print("\n\nLinear Time complexity Example 2")
 
 def linearEx2(userList: list):
     i = 0
@@ -30,7 +30,7 @@ def linearEx2(userList: list):
         
 linearEx2(names)
 
-print(os.linesep, "\nLinear Timecomplexity Example 3")
+print(os.linesep, "\nLinear Time complexity Example 3")
 
 def linearEx3(users: list):
     i = 1
