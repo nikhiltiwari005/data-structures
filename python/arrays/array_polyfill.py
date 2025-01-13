@@ -21,6 +21,11 @@ class CustomArray:
         return self.data[index]
     
     def remove(self, index):
+        if self.len <= 0:
+            raise Exception("Array is empty")
+        if index >= self.len:
+            raise Exception("Index not found")
+        
         i = index
         while i < self.len - 1:
             self.data[i] = self.data[i+1]
@@ -38,5 +43,5 @@ arr.push("a")
 arr.push("b")
 arr.push("c")
 print(arr)
-arr.pop()
+arr.remove(2)
 print(arr)
